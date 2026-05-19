@@ -158,7 +158,7 @@ body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: va
 .timeline::before { content: ''; position: absolute; left: 0; top: 14px; bottom: 0; width: 2px; background: linear-gradient(to bottom, var(--hot), var(--orange), transparent); }
 .tl-item { position: relative; padding-left: 1.4rem; margin-bottom: 1.2rem; opacity: 0; transform: translateX(-20px); transition: opacity 0.6s ease, transform 0.6s ease; }
 .tl-item.visible { opacity: 1; transform: translateX(0); }
-.tl-dot { position: absolute; left: -1.6rem; top: 16px; width: 12px; height: 12px; border-radius: 50%; background: linear-gradient(135deg, var(--hot), var(--orange)); box-shadow: 0 0 0 3px var(--bg), 0 0 0 5px rgba(200,76,115,0.2); z-index: 1; }
+.tl-dot { position: absolute; left: -1.3rem; top: 16px; width: 12px; height: 12px; border-radius: 50%; background: linear-gradient(135deg, var(--hot), var(--orange)); box-shadow: 0 0 0 3px var(--bg), 0 0 0 5px rgba(200,76,115,0.2); z-index: 1; }
 .tl-card { background: var(--card); border-radius: 16px; padding: 1.3rem 1.5rem; border: 1px solid rgba(200,76,115,0.12); box-shadow: 0 2px 14px rgba(200,76,115,0.06); position: relative; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; }
 .tl-card::before { content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: linear-gradient(to bottom, var(--hot), var(--orange)); border-radius: 4px 0 0 4px; }
 .tl-card:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(200,76,115,0.12); }
@@ -217,7 +217,7 @@ body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: va
 }
 .tl-pitstop.visible { opacity: 1; transform: translateX(0); }
 .tl-pitstop-dot {
-  position: absolute; left: -2.3rem; top: 50%;
+  position: absolute; left: -1.3rem; top: 50%;
   transform: translateY(-50%);
   width: 8px; height: 8px; border-radius: 50%;
   background: var(--orange);
@@ -577,8 +577,8 @@ body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: va
       <div class="checklist-group reveal">
         <div class="checklist-group-title">📋 行く前の準備</div>
         <div class="check-item" onclick="toggleCheck(this,'p2')"><div class="check-box"></div><span class="check-label">フライトのオンラインチェックイン<small>フライト14日前から。必要に応じて座席・機内食を事前購入</small></span></div>
-        <div class="check-item" onclick="toggleCheck(this,'p3')"><div class="check-box"></div><span class="check-label">電子入国カード提出<small>入国3日前から。りさぼん担当</small></span></div>
-        <div class="check-item" onclick="toggleCheck(this,'p5')"><div class="check-box"></div><span class="check-label">eSIMの手配<small>4日で1,000円程度。りさぼん担当</small></span></div>
+        <div class="check-item" onclick="toggleCheck(this,'p3')"><div class="check-box"></div><span class="check-label">電子入国カード提出<small>入国3日前から</small></span></div>
+        <div class="check-item" onclick="toggleCheck(this,'p5')"><div class="check-box"></div><span class="check-label">eSIMの手配<small>4日で1,000円程度</small></span></div>
         <div class="check-item" onclick="toggleCheck(this,'p7')"><div class="check-box"></div><span class="check-label">Grabアプリのインストール<small>タクシー配車アプリ。日本でSMS認証まで済ませる</small></span></div>
         <div class="check-item" onclick="toggleCheck(this,'p8')"><div class="check-box"></div><span class="check-label">Google Mapでホテル・観光地にピン立て</span></div>
         <div class="check-item" onclick="toggleCheck(this,'p9')"><div class="check-box"></div><span class="check-label">要予約スポットの予約手配<small>初日ディナー、アユタヤツアー、アフターヌーンティー、グルメツアー</small></span></div>
