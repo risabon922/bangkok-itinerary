@@ -455,6 +455,13 @@ body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: va
 .ps-grid .ps-item { border-bottom: 1px solid rgba(200,76,115,0.08); }
 .ps-grid .ps-item:nth-last-child(-n+2) { border-bottom: none; }
 @media (max-width: 480px) { .ps-grid { grid-template-columns: 1fr; } }
+
+/* PHRASE */  
+.phrase-item { padding: 7px 0; border-bottom: 1px solid rgba(200,76,115,0.08); }
+.phrase-item:last-child { border-bottom: none; }
+.phrase-th { font-size: 14px; color: var(--ink); margin-bottom: 2px; }
+.phrase-read { font-family: 'Lato', sans-serif; font-size: 11px; font-weight: 700; color: var(--hot); letter-spacing: 0.04em; }
+.phrase-mean { font-size: 11px; color: var(--muted); margin-top: 1px; }
 </style>
 </head>
 <body>
@@ -696,7 +703,7 @@ body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: va
         <div class="tl-item"><div class="tl-dot"></div><div class="tl-card"><div class="tl-header"><span class="tl-time">Morning</span><span class="tl-cat cat-hotel">Hotel</span><span class="tl-title">朝食ビュッフェ</span></div><div class="tl-body">最後の朝食！チェックアウトは12時なのでゆっくり楽しもう☀️</div></div></div>
         <div class="tl-item"><div class="tl-dot"></div><div class="tl-card"><div class="tl-header"><span class="tl-time">〜12:00</span><span class="tl-cat cat-hotel">Hotel</span><span class="tl-title">チェックアウト</span></div><div class="tl-body">荷物はフロントに預けて手ぶらで観光へ出発！</div></div></div>
         <div class="tl-item"><div class="tl-dot"></div><div class="tl-card"><div class="tl-header"><span class="tl-time">Noon</span><span class="tl-cat cat-sight">Sight</span><span class="tl-title">ワットプラケオ＋ワットポー</span></div><img class="tl-spot-photo" src="https://tabippo.net/wp-content/uploads/20200217190347/pixta_37384435_M-1.jpg"><div class="tl-body">タイで最も神聖な寺院。黄金の装飾が圧巻！ワットポーの巨大涅槃像も必見</div><div class="tl-note" style="margin-bottom:8px;">🚇 MRT スクンビット → サナームチャイ（9駅・約30分）</div><div class="tl-note">⚠️ 宗教施設のため服装に注意！ミニスカート・袖なし・短パンNG</div></div></div>
-        <div class="tl-item"><div class="tl-dot"></div><div class="tl-card"><div class="tl-header"><span class="tl-time">17:30</span><span class="tl-cat cat-food">Eat</span><span class="tl-title">レストランバスツアー</span><span class="stamp-req">予約済</span></div><img class="tl-spot-photo" src="https://res.klook.com/image/upload/w_1265,h_791,c_fill,q_85/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/mxhhcfskcpxow23hexov.webp"><div class="tl-body">9,199円・約1.5時間🍜 走るレストランバスで夜のバンコクを一周しながら食事！</div><div class="tl-links"><a class="tl-link" href="https://s.klook.com/c/mXDj2vYMyP" target="_blank">🔗 Klook</a></div></div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-card"><div class="tl-header"><span class="tl-time">17:30</span><span class="tl-cat cat-food">Eat</span><span class="tl-title">レストランバスツアー</span><span class="stamp-req">予約済</span></div><img class="tl-spot-photo" src="https://res.klook.com/image/upload/w_1265,h_791,c_fill,q_85/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/mxhhcfskcpxow23hexov.webp"><div class="tl-body">約1.5時間🍜 走るレストランバスで夜のバンコクを一周しながら食事！</div><div class="tl-links"><a class="tl-link" href="https://s.klook.com/c/mXDj2vYMyP" target="_blank">🔗 Klook</a></div></div></div>
         <div class="tl-item"><div class="tl-dot"></div><div class="tl-card"><div class="tl-header"><span class="tl-time">Night</span><span class="tl-cat cat-shop">Shop</span><span class="tl-title">ラスト買い物</span></div><div class="tl-body">お土産の買い忘れチェック！ホテルに戻ってパッキング🧳</div></div></div>
         <div class="tl-item tl-transit"><div class="tl-dot"></div><div class="tl-card"><div class="tl-header"><span class="tl-time">21:00</span><span class="tl-cat cat-move">Taxi</span><span class="tl-title">Grab で空港へ出発</span></div><div class="tl-body">深夜でも渋滞があるバンコク。早めに動くのが正解🚕</div><div class="tl-note">⚠️ 空港まで1時間以上かかることも</div></div></div>
         <div class="tl-item tl-transit"><div class="tl-dot"></div><div class="tl-card"><div class="tl-header"><span class="tl-time">翌 1:10</span><span class="tl-cat cat-move">Flight</span><span class="tl-title">BKK 出発</span></div><div class="tl-body">バンコクまたね！✈️🌺　フライト時間は約6時間。</div><div class="tl-note">MM092便 · スワンナプーム空港 → 関西国際空港</div></div></div>
@@ -750,7 +757,76 @@ body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: va
         <div class="ps-item" style="grid-column:1/-1"><span class="ps-icon">🛺</span><div class="ps-body"><div class="ps-name">チャトチャック ウィークエンドマーケット</div><div class="ps-memo">週末限定の超巨大マーケット。雑貨・古着・アート・食べ物なんでもある！金土日のみ営業</div><div class="ps-links"><a class="ps-link" href="https://maps.app.goo.gl/aJUg2N4GDc6ysM5s6?g_st=ic" target="_blank">📍 Map</a></div></div></div>
       </div>
     </div>
+<div class="divider-line"></div>
 
+<section style="background:white;padding:0;">
+<div class="section">
+  <p class="section-eyebrow reveal">Travel Thai</p>
+  <h2 class="section-title reveal">タイ語で<em>旅会話</em></h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.8rem;" class="reveal">
+
+    <div style="background:rgba(200,76,115,0.05);border:1px solid rgba(200,76,115,0.12);border-radius:12px;padding:1rem;">
+      <div style="font-family:'Lato',sans-serif;font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--hot);margin-bottom:0.8rem;font-weight:700;">👋 あいさつ</div>
+      <div class="phrase-item">
+        <div class="phrase-th">สวัสดีค่ะ</div>
+        <div class="phrase-read">サワディーカー</div>
+        <div class="phrase-mean">こんにちは / おはよう / こんばんは</div>
+      </div>
+      <div class="phrase-item">
+        <div class="phrase-th">ขอบคุณค่ะ</div>
+        <div class="phrase-read">コップンカー</div>
+        <div class="phrase-mean">ありがとうございます</div>
+      </div>
+    </div>
+
+    <div style="background:rgba(215,158,73,0.06);border:1px solid rgba(215,158,73,0.2);border-radius:12px;padding:1rem;">
+      <div style="font-family:'Lato',sans-serif;font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--orange);margin-bottom:0.8rem;font-weight:700;">🛍️ ショッピング</div>
+      <div class="phrase-item">
+        <div class="phrase-th">อันนี้เท่าไหร่คะ</div>
+        <div class="phrase-read">アンニー タオライ カー？</div>
+        <div class="phrase-mean">これはいくらですか？</div>
+      </div>
+      <div class="phrase-item">
+        <div class="phrase-th">เอาอันนี้ค่ะ</div>
+        <div class="phrase-read">アオ アンニー カー</div>
+        <div class="phrase-mean">これをください</div>
+      </div>
+      <div class="phrase-item">
+        <div class="phrase-th">ไม่เอาค่ะ</div>
+        <div class="phrase-read">マイ アオ カー</div>
+        <div class="phrase-mean">いりません / 結構です</div>
+      </div>
+    </div>
+
+    <div style="background:rgba(200,76,115,0.05);border:1px solid rgba(200,76,115,0.12);border-radius:12px;padding:1rem;">
+      <div style="font-family:'Lato',sans-serif;font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--hot);margin-bottom:0.8rem;font-weight:700;">🍜 グルメ</div>
+      <div class="phrase-item">
+        <div class="phrase-th">ไม่ใส่พริกค่ะ</div>
+        <div class="phrase-read">マイ サイ プリック カー</div>
+        <div class="phrase-mean">唐辛子を入れないでください</div>
+      </div>
+      <div class="phrase-item">
+        <div class="phrase-th">เช็คบิลค่ะ</div>
+        <div class="phrase-read">チェックビン カー</div>
+        <div class="phrase-mean">お会計お願いします</div>
+      </div>
+      <div class="phrase-item">
+        <div class="phrase-th">อร่อยมากค่ะ</div>
+        <div class="phrase-read">アロイ マーク カー</div>
+        <div class="phrase-mean">とても美味しいです！</div>
+      </div>
+    </div>
+
+    <div style="background:rgba(215,158,73,0.06);border:1px solid rgba(215,158,73,0.2);border-radius:12px;padding:1rem;display:flex;align-items:center;justify-content:center;text-align:center;">
+      <div>
+        <div style="font-size:2rem;margin-bottom:0.5rem;">🐘</div>
+        <div style="font-family:'Noto Serif JP',serif;font-size:0.95rem;color:var(--ink);line-height:1.7;">語尾の <strong style="color:var(--hot);">カー（ค่ะ）</strong> は<br>女性が使う丁寧な表現。<br>笑顔で言えば必ず通じる！</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
   </div>  </div>
 </div>
 </section>
